@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    font-size: 16px;
+    color: #fff;
+}
+
+h1 {
+    color: green;
+    margin-top: 18%;
+    right: 1000px;
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0;}
+}

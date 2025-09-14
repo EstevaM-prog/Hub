@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+/* Navbar principal */
+.navbar {
+    background-color: #1a1a1a; /* cor de fundo da navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* logo à esquerda, links à direita */
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Lista da navbar */
+#top-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* espaço entre os itens */
+}
+
+/* Itens da navbar */
+#top-nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+/* Logo dentro da navbar */
+#top-nav ul li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Logo + Hub */
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.navbar .logo-container img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.navbar {
+    border-radius: 10px;
+}
+
+
+
+

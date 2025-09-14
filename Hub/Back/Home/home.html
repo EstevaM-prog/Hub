@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/Hub/Img/download.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="/Hub/Home/nav_bar/nav_bar.css">
+        <link rel="stylesheet" href="home.css">
+        
+        <title>Hub - Home</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <nav id="top-nav">
+                <ul>
+                    <li id="logo"><img src="/Hub/Img/logo.png" alt="logo"> Hub</li>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="/Hub/Back/relogio_digital/clock.html">Clock</a></li>
+                    <li><a href="/Hub/Back/Calendario_digital/calender.html">Calender</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1 id="text"></h1>
+        <script>
+            const texto = "Hello Word";
+            const elemento = document.getElementById("text")
+            let i = 0;
+
+            function digitar(){
+                if ( i < texto.length){
+                    elemento.innerHTML += texto.charAt(i);
+                    i++;
+                    setTimeout(digitar, 200) // 200ms entre cada letra
+                } else {
+                    // adiciona o o ponto piscando
+                    elemento.innerHTML += '<span class="cursor">.</span>';
+                }
+            }
+
+            digitar();
+        </script>
+    </body>
+
+    </html>
